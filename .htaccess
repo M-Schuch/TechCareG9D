@@ -1,0 +1,32 @@
+# Activez HTTPS
+#RewriteEngine On
+#RewriteCond %{Server_Port} !=443
+#RewriteRule ^(.*)$ https://votre-domaine.fr/$1 [R=301, L]
+
+RewriteEngine on
+
+# Prod version
+RewriteCond %{HTTP_HOST} ^infinitemeasures.herokuapp.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^infinitemeasures.herokuapp.com$
+## Dev Version
+#RewriteCond %{HTTP_HOST} ^www.infinitemeasures.com$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.infinitemeasures.com$
+
+
+# Mac Version
+#RewriteCond %{HTTP_HOST} ^localhost:8888$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^localhost:8888$
+
+
+
+#RewriteCond %{REQUEST_URI} !Web/
+#RewriteRule (.*) /Web/$1 [L]é ,!
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+#AuthName "Page d'administration protégée"
+#AuthType Basic
+#AuthUserFile "/home/site/www/admin/.htpasswd"
+#Require valid-user

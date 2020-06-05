@@ -1,0 +1,74 @@
+.personnal-info, .summary-test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right, .left, .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  padding-left: 20px;
+}
+
+.left {
+  padding-right: 20px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.infos {
+  padding: 0.5em 2em 3em 0;
+  color: grey;
+  font-size: 1.2em;
+}
+
+.personnal-info .infos {
+  margin-left: 0.3em;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-self: center;
+  padding: 0.6rem;
+  margin-top: 0.5em;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: rgba(168, 202, 233, 1);
+}
+
+@media only screen and (max-width: 850px)  {
+  body {
+    overflow-x: hidden;
+  }
+  .personnal-info {
+    flex-direction: column !important;
+  }
+  .right {
+    padding-left: 0 !important;
+  }
+  .left{
+    padding-right: 0 !important;
+  }
+  .center{
+    padding-right: 0 !important;
+  }
+}

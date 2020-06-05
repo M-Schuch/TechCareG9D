@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", FontAwesome, Helvetica, sans-serif;
+}
+
+#body {
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  margin-left: 16em;
+  margin-top: 4em;
+}
+
+header {
+  font-size: 10pt;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1 !important;
+}
+
+#header {
+  position: fixed;
+  background: #22242A;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 1em;
+  z-index: 3 !important;
+}
+
+#header h3 {
+  color: #ffffff;
+  font: bold 2em 'Dancing Script';
+  letter-spacing: 0.2em;
+  display: flex;
+  align-items: center;
+}
+#header h1 {
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+#header p {
+  color: #A8CAE9;
+  font: bold 1.2em 'Dancing Script';
+  letter-spacing: 0.2em;
+}
+
+#page-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.right_area {
+  display: flex;
+  align-items: center;
+}
+
+.img-flag:first-child{
+  margin-right: 0.5em;
+}
+
+#flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2em;
+}
+
+.img-flag {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.logout_btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 0.3em;
+  text-decoration: none;
+  background-color: #A8CAE9;
+  border-radius: 5px;
+}
+
+.sidebar {
+  margin-top: 4em;
+  background: #2f323a;
+  padding-top: 2em;
+  position: fixed;
+  width: 16em;
+  height: 100vh;
+  transition: 0.5s;
+  transition-property: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  justify-items: center !important;
+  display: block;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 4em;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+#navbar {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar a {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+#navbar i {
+  padding: 0 0.5em;
+  font-size: 1.5em;
+}
+
+#navbar a:hover {
+  background: #A8CAE9;
+}
+
+#footer {
+  margin-bottom: 4em;
+}
+#link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+#link a {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+#link span {
+  padding: 0 0.5em;
+  color: white;
+}
+
+#link a:hover {
+  text-decoration: underline;
+}
+
+#copyright {
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+#copyright p {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (width: 1680px) {
+  header {
+    font-size: 9pt;
+  }
+  .sidebar{
+    font-size: 9pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    font-size: 8pt;
+  }
+  .sidebar{
+    font-size: 8pt;
+  }
+}
+
+@media only screen and (max-width: 936px)  {
+  header{
+    font-size: 8pt;
+  }
+  .sidebar{
+    font-size: 8pt;
+  }
+  #body {
+    margin-left: 4em;
+  }
+
+  .sidebar{
+    margin: 0;
+    height: 100vh;
+    width: 4em;
+    justify-content: center;
+  }
+
+    .sidebar h1{
+      display: none;
+      justify-content: center;
+    }
+
+    .sidebar i {
+      max-width: 4em;
+    }
+
+    #copyright, #link {
+      display: none;
+    }
+
+    #footer {
+      display: none;
+    }
+
+    #navbar a {
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sidebar h2 {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+  header {
+    font-size: 7pt;
+    letter-spacing: 0.0375em;
+  }
+
+  .sidebar {
+    font-size: 7pt;
+  }
+  #body {
+    margin-left: 3em !important;
+  }
+
+  #page-title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 7pt;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 7pt;
+  }
+  #body {
+    margin-left: 2em !important;
+  }
+}

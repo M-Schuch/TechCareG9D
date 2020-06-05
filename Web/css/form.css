@@ -1,0 +1,286 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://pro.fontawesome.com/releases/v5.13.0/css/all.css);
+#body {
+  justify-content: center;
+}
+
+.box h1 {
+  color: grey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#body h2 {
+  color: grey;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#body label {
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.far, .fal, .far {
+  padding-right: 1em;
+}
+
+.title-form {
+  border-bottom: solid;
+}
+
+.box {
+  box-shadow: 0 0 14px 0 rgba(168,158,168,1);
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4em 5em;
+  height: 100%;
+}
+
+.box a {
+  color: grey;
+}
+
+.box a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover {
+  background: rgba(168, 202, 233, 0.8);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  cursor: pointer;
+  align-self: center;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1.2em;
+  outline: none;
+  width: 35%;
+  margin: 2em 0;
+}
+
+.add {
+  background-color: #009933;
+}
+
+.delete {
+  background-color:  #ff0c0c;
+}
+
+.edit {
+  background-color: #c2a0a0;
+}
+
+.ban {
+  background-color: black;
+}
+
+input {
+  outline: none;
+  padding: 0.6rem;
+  margin-top: 0.5em;
+  border-style: solid;
+  border-color: rgba(168, 202, 233,0.2);
+  color: black;
+  font-size: 1.2em;
+  border-radius: 3px;
+}
+
+input:focus {
+  border-color: rgba(168, 202, 233,1);
+}
+
+input::placeholder{
+  color:grey;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  align-self: center;
+  border-radius: 5px;
+  background-color: rgba(168, 202, 233,1);
+  color: white;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#day {
+  width: 50px;
+}
+
+#month {
+  width: 65px;
+}
+
+ #year {
+  width: 85px;
+}
+
+input[type=checkbox] {
+  display:none;
+}
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before {
+  content: "\f096";
+  letter-spacing: 10px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f046";
+}
+
+.top-text {
+  padding: 40px 0 40px 0;
+  font-size: 1.1em;
+}
+
+.box span {
+  font-weight: bold;
+}
+
+.error-msg {
+  padding: 5px 0 40px 0;
+  color: red;
+}
+
+textarea {
+  padding: 0.6rem;
+  margin-top: 0.5em;
+  border-style: solid;
+  border-color: rgba(168, 202, 233,0.2);
+  color: grey;
+  font-size: 1.2em;
+  border-radius: 2px;
+}
+
+textarea:focus {
+  border-color: rgba(168, 202, 233,1);
+}
+
+.option label {
+  color: red;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.selectbox select {
+  padding: 0.6rem;
+  margin-top: 0.5em;
+  border-style: solid;
+  border-color: rgba(168, 202, 233,0.2);
+  color: grey;
+  font-size: 1.2em;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.faq input {
+  margin-bottom: 2em;
+}
+
+#form-add {
+  padding: 5px 0px 1em 0px;
+  color: red;
+}
+
+#add-submit {
+  margin-bottom: 2em;
+}
+
+#faq-title {
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 850px)  {
+  #body .box {
+    box-shadow: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    flex-direction: column;
+  }
+}
+
+@media screen and (width: 1680px) {
+  #body {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #body {
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  #body {
+    font-size: 9pt;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #body {
+    /*font-size: 7pt;*/
+    letter-spacing: 0.0375em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #body {
+    /*font-size: 7pt;*/
+    letter-spacing: 0;
+  }
+}
+/*
+@media screen and (max-width: 480px) {
+  #body {
+    font-size: 10pt;
+  }
+}
+*/

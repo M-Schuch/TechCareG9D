@@ -1,0 +1,67 @@
+.fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+}
+
+.fa-eye-slash, .fa-eye {
+  cursor: pointer;
+  position: relative;
+  left: 12em;
+  bottom: 1.6em;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+}
+
+
+@media only screen and (max-width: 850px)  {
+  .fields {
+    flex-direction: column !important;
+  }
+  .right {
+    padding-left: 0 !important;
+  }
+  .left{
+    padding-right: 0 !important;
+  }
+
+  .fa-eye-slash, .fa-eye {
+    left: 24em;
+    bottom: 2em;
+  }
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom-edit {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 0;
+}
